@@ -1,54 +1,64 @@
-# React + TypeScript + Vite
+# DeepChat React TypeScript Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un proyecto desarrollado con **React** y **TypeScript**, utilizando la librería **DeepChat** para integrar funcionalidades avanzadas de chat en tiempo real.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React** ⚛️
+- **TypeScript** 🟦
+- **DeepChat** 💬
+- **Vite** ⚡ (para una configuración rápida y ligera)
+- **Styled Components / TailwindCSS** (opcional, según el diseño usado)
 
-## Expanding the ESLint configuration
+## 📦 Instalación
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. Clona el repositorio:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+   ```sh
+   git clone https://github.com/Ymbossio/CHATBOT-REACT-TYPESCRIPT-DEEPCHAT.git
+   ```
+
+2. Entra en la carpeta del proyecto:
+
+   ```sh
+   cd CHATBOT-REACT-TYPESCRIPT-DEEPCHAT
+   ```
+
+3. Instala las dependencias:
+
+   ```sh
+   npm install
+   ```
+
+4. Inicia el servidor de desarrollo:
+
+   ```sh
+   npm run dev
+   ```
+
+## 📌 Características
+
+✅ Chat en tiempo real con DeepChat.
+✅ Implementado con React y TypeScript.
+✅ Configuración fácil y escalable.
+✅ Diseño personalizable con CSS o librerías como TailwindCSS.
+
+## 🚀 Despliegue
+
+Puedes desplegar el proyecto en **Vercel**, **Netlify**, o cualquier otro servicio de hosting estático.
+
+Para desplegar en Vercel:
+
+```sh
+npm run build
+vercel deploy
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📄 Licencia
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Este proyecto está bajo la licencia MIT.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+¡Si te gusta este proyecto, no olvides darle una ⭐ en GitHub! 😊
+
